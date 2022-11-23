@@ -5,7 +5,7 @@ eureka:
         http://EurekaServer2:8762/eureka
 spring:
   application:
-    name: BookQueryService
+    name: BOOKQUERYSERVICE
   data:
     mongodb:
       host: localhost
