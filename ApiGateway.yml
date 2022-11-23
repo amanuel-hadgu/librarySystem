@@ -7,7 +7,7 @@ spring:
     gateway:
       routes:
         - id: bookQuery
-          uri: lb://BookQueryService
+          uri: lb://BOOKQUERYSERVICE
           predicates:
             - Path=/books/**
         - id: booksCommand
