@@ -11,7 +11,7 @@ spring:
           lowerCaseServiceId: true
       routes:
         - id: bookQuery
-          uri: lb://BookQueryService
+          uri: lb://bookqueryservice
           predicates:
             - Path=/books/**
         - id: booksCommand
