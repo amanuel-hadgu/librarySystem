@@ -5,6 +5,10 @@ spring:
     name: ApiGateway
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
       routes:
         - id: bookQuery
           uri: lb://BookQueryService
